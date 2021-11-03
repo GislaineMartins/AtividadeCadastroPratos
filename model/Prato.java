@@ -4,7 +4,7 @@ public class Prato extends Base {
 
     public String formato;
     public String cor;
-    public int ano;
+    public int anoDeFabricacao;
 
     @Override
     public boolean equals(Object obj) {
@@ -20,7 +20,7 @@ public class Prato extends Base {
     @Override
     public String toString() {
         String msg = "Id prato: " + super.id + ", Formato: " + this.formato + ", Cor: " + this.cor + ", Ano: "
-                + this.ano;
+                + this.anoDeFabricacao;
         return msg;
     }
 
