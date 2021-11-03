@@ -9,23 +9,21 @@ public class Main {
         PratoController listaDePratos = new PratoController();
         Prato prato1 = new Prato();
         prato1.id =  1;
-        prato1.formato = "redondo";
-        prato1.cor = "vermelho";
-        prato1.anoDeFabricacao = 2000;
+        prato1.nome = "Strogonofre";
+        prato1.quantidadeTotal = 1;
+      
         listaDePratos.create(prato1);
 
         Prato prato2 = new Prato();
         prato2.id = 2;
-        prato2.formato = "quadrado";
-        prato2.cor = "verde";
-        prato2.anoDeFabricacao = 1985;
+        prato2.nome = "file de peito";
+        prato2.quantidadeTotal = 1;
         listaDePratos.create(prato2);
 
         Prato prato3 = new Prato();
         prato3.id = 3;
-        prato3.formato = "triangulo";
-        prato3.cor = "azul";
-        prato3.anoDeFabricacao = 1800;
+        prato3.nome = "lasanha";
+        prato3.quantidadeTotal = 1;
         listaDePratos.create(prato3);
 
         System.out.println("Existe prato 1: "+listaDePratos.existe(prato1));
@@ -45,9 +43,8 @@ public class Main {
             System.out.println(p);
         }
 
-        System.out.println("Alterando COR e ANO DE FABRICAÇÃO do prato1!!");
-        prato1.cor = "roxo";
-        prato1.anoDeFabricacao = 1999;
+        System.out.println("Alterando NOME do prato1!!");
+        prato1.nome = "panqueca";       
         listaDePratos.update(prato1);
 
         System.out.println("Lista de pratos!!");
