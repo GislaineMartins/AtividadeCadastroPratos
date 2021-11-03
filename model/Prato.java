@@ -2,9 +2,8 @@ package model;
 
 public class Prato extends Base {
 
-    public String formato;
-    public String cor;
-    public int anoDeFabricacao;
+    public String nome;    
+    public int quantidadeTotal;
 
     @Override
     public boolean equals(Object obj) {
@@ -19,8 +18,8 @@ public class Prato extends Base {
 
     @Override
     public String toString() {
-        String msg = "Id prato: " + super.id + ", Formato: " + this.formato + ", Cor: " + this.cor + ", Ano: "
-                + this.anoDeFabricacao;
+        String msg = "Id prato: " + super.id + ", Nome: " + this.nome + 
+        ", Quantidade total: " + this.quantidadeTotal;
         return msg;
     }
 
